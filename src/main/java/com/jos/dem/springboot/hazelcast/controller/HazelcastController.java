@@ -27,7 +27,7 @@ public class HazelcastController {
   public String write(@PathVariable("key") String key, @PathVariable("value") String value) {
     log.info("Storing key: {} with value: {}", key, value);
     Map<String, String> map = hazelcastInstance.getMap("memory");
-    map.put(key, value);
+    map.putIfAbsent(key, value);
     return "Key and value stored";
   }
 
