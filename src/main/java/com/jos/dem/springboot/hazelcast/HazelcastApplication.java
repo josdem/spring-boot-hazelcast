@@ -1,4 +1,4 @@
-package com.example.springboothazelcast;
+package com.jos.dem.springboot.hazelcast;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
