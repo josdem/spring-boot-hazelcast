@@ -31,4 +31,11 @@ public class HazelcastController {
     return "Key and value stored";
   }
 
+  @GetMapping("/read/{key}")
+  public String read(@PathVariable("key") String key){
+    log.info("Reading stored value with key: {}", key);
+    Map<String, String> map = hazelcastInstance.getMap("memory");
+    return map.get(key);
+  }
+
 }
