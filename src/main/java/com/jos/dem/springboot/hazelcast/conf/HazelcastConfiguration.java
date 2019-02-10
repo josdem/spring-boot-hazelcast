@@ -1,4 +1,4 @@
-package com.jos.dem.springboot.hazelcast;
+package com.jos.dem.springboot.hazelcast.conf;
 
 import com.hazelcast.config.Config;
 import com.hazelcast.config.EvictionPolicy;
