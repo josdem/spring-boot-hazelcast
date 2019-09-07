@@ -1,13 +1,7 @@
-buildscript {
-  ext {
-    springBootVersion = '2.1.2.RELEASE'
-  }
-  repositories {
-    mavenCentral()
-  }
-  dependencies {
-    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-  }
+plugins {
+  id 'org.springframework.boot' version '2.1.7.RELEASE'
+  id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+  id 'java'
 }
 
 apply plugin: 'java'
@@ -16,7 +10,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.jos.dem.springboot.hazelcast'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = '11'
 
 repositories {
   mavenCentral()
