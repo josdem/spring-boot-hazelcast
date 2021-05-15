@@ -10,13 +10,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class HazelcastConfiguration {
 
+    private final static int MAX_SIZE = 200;
+
     @Bean
     public Config hazelCastConfig() {
         return new Config().setInstanceName("hazelcast-instance")
                 .addMapConfig(
                         new MapConfig()
                                 .setName("configuration")
-                                .setMaxSizeConfig(new MaxSizeConfig(200, MaxSizeConfig.MaxSizePolicy.FREE_HEAP_SIZE))
+                                .setMaxSizeConfig(new MaxSizeConfig(MAX_SIZE, MaxSizeConfig.MaxSizePolicy.FREE_HEAP_SIZE))
                                 .setEvictionPolicy(EvictionPolicy.LFU)
                                 .setTimeToLiveSeconds(-1));
     }
