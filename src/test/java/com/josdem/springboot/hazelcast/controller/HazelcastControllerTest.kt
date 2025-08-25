@@ -1,4 +1,4 @@
-package controller
+package com.josdem.springboot.hazelcast.controller
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInfo

@@ -1,4 +1,4 @@
-package com.jos.dem.springboot.hazelcast.controller;
+package com.josdem.springboot.hazelcast.controller;
 
 import com.hazelcast.core.HazelcastInstance;
 import lombok.RequiredArgsConstructor;
