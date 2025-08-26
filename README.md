@@ -6,7 +6,13 @@ This project shows how to use [Hazelcast](https://hazelcast.org/) with Spring Bo
 #### To run the project
 
 ```bash
-gradle bootRun
+./gradlew bootRun
+```
+
+#### To run tests
+
+```bash
+./gradlew test
 ```
 
 #### Read this as reference:
