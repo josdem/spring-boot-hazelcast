@@ -23,7 +23,7 @@ public class HazelcastConfiguration {
         return new Config().setInstanceName("hazelcast-instance")
                 .addMapConfig(
                         new MapConfig()
-                                .setName("configuration")
+                                .setName("memory")
                                 .setEvictionConfig(evictionConfig)
                                 .setTimeToLiveSeconds(-1));
     }
